@@ -1,0 +1,178 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #eae6f7;
+    background: linear-gradient(180deg, #0f0a1f, #1b0f3a);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-header {
+    background: rgba(15, 10, 31, 0.95);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+}
+
+.logo {
+    color: #a78bfa;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.main-nav a {
+    color: #eae6f7;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #a78bfa;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #eae6f7;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 24px;
+}
+
+h1 {
+    color: #a78bfa;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: rgba(167, 139, 250, 0.1);
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: rgba(167, 139, 250, 0.3);
+}
+
+.filter-btn.active {
+    background: linear-gradient(90deg, #a78bfa, #7c3aed);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.project-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(167, 139, 250, 0.3);
+}
+
+.project-card h3 {
+    color: #7c3aed;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    color: #c3b6e2;
+    flex-grow: 1;
+}
+
+.click {
+    background: linear-gradient(90deg, #a78bfa, #7c3aed);
+    border: none;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.click:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.site-footer {
+    background: rgba(15, 10, 31, 0.95);
+    padding: 16px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.site-footer p {
+    color: #a78bfa;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(15, 10, 31, 0.98);
+        position: absolute;
+        top: 64px;
+        right: 0;
+        width: 200px;
+        padding: 12px;
+        border-radius: 8px;
+    }
+    .main-nav.show {
+        display: flex;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .main-nav a {
+        margin: 8px 0;
+    }
+}

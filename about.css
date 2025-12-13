@@ -1,0 +1,37 @@
+:root {
+  --bg: #0f0a1f;
+  --card: #1b0f3a;
+  --muted: #c3b6e2;
+  --accent1: #a78bfa;
+  --accent2: #7c3aed;
+  --glass: rgba(255,255,255,0.05);
+}
+body{
+    margin:0;
+    font-family:'Segoe UI',Roboto,sans-serif;
+    color:#eae6f7;
+    background: linear-gradient(180deg, #0f0a1f, #1b0f3a);
+}
+
+h1{
+    color:var(--accent2);
+    margin-bottom:12px;
+}
+p{
+    color:var(--muted);
+    line-height:1.6;
+    margin-bottom:12px;
+}
+
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    color:var(--accent2);
+    font-weight:700;
+    font-size:20px;
+    text-decoration:none;
+}
+

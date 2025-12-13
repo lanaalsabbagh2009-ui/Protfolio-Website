@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    font-family:'Segoe UI',Roboto,sans-serif;
+    color:#eae6f7;
+    background: linear-gradient(180deg, #0f0a1f, #1b0f3a);
+}
+
+  
+h1{
+    color:#a78bfa;
+    margin-bottom:24px;
+}
+.skill-bar{
+    margin-bottom:14px;
+    background:rgba(255,255,255,0.03);
+    padding:6px;
+    border-radius:12px;
+}
+.skill-bar label{
+    display:block;
+    margin-bottom:4px;
+    color:#c3b6e2;
+}
+.skill-bar div{
+    height:20px;
+    width:0%;
+    background:linear-gradient(90deg,#a78bfa,#7c3aed);
+    border-radius:12px;
+    transition:width 1.2s ease;
+}
