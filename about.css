@@ -35,3 +35,36 @@ p{
     text-decoration:none;
 }
 
+/* About Section Boxes */
+.about-section {
+  margin-top: 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.about-box {
+  background: rgba(167, 139, 250, 0.95); /* purple box */
+  padding: 22px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ffffff; /* white text */
+}
+
+.about-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(167, 139, 250, 0.6);
+}
+
+
