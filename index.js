@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('load', function() {
      const preloader = document.getElementById('preloader');
         preloader.style.opacity = '0';
-        preloader.style.transition = 'opacity 0.5s ease';
+        preloader.style.transition = 'opacity 2s ease';
         setTimeout( function(){preloader.style.display = 'none', 500} );
   });
     
