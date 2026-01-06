@@ -78,16 +78,34 @@ main {
 }
 
 
-#preloader{
-  background-image: url("https://pin.it/3uwJdl5qB.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-  position:fixed;
-  z-index: 10; 
-  background-size: 100%;
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(167, 139, 250, 0.3); 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .site-header{
     position:sticky;
     top:0;

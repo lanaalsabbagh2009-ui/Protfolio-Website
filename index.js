@@ -35,6 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
             if (top < window.innerHeight - 100) { sections[s].style.opacity = "1"; sections[s].style.transform = "translateY(0)"; }
         }
     }
+    
+    window.addEventListener('load', function() {
+     const preloader = document.getElementById('preloader');
+        preloader.style.opacity = '0';
+        preloader.style.transition = 'opacity 0.5s ease';
+        setTimeout( function(){preloader.style.display = 'none', 500} );
+  });
+    
+
     window.addEventListener('scroll', revealSections);
     revealSections();
     var topBtn = document.createElement('button');
