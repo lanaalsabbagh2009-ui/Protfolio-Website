@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var typingText = document.getElementById('typing-text');
-    var fullText = "Lana 17 years-old, a Future Engineer and Web Developer!!";
+    var fullText = "Lana 18 years-old, a Future Engineer and Web Developer!!";
     var i = 0; function typeWriter() {
         if (i < fullText.length) {
             typingText.innerHTML += fullText.charAt(i); i++;
