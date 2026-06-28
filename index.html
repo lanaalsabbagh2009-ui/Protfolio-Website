@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lana Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -22,11 +24,10 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-
     <div class="hero-text">
       <h1>Future Engineer & Web Developer</h1>
-      <p class="subtitle">Lana Al Sabbagh , 18-year-old ,and Syrian citizen!!</p> <a href="#projects" class="btn">View My Work</a> </div>
-
+      <p class="subtitle">Lana Al Sabbagh, 18-year-old, from Syria.</p> <a href="#projects" class="btn">View
+        My Work</a>
       <!-- EXTRA -->
       <div class="hero-extra">
 
@@ -64,14 +65,22 @@
 
   </section>
 
-  <!-- HIGHLIGHT -->
   <section class="highlight-box">
 
-    <img src="/assets/mypicture.jpg" alt="profile">
+    <div class="highlight-avatar">
+      <img src="assets/mypicture.jpg" alt="Profile">
+    </div>
 
-    <div>
-      <h3>Highlights</h3>
+    <div class="highlight-content">
+      <h2>Highlights</h2>
       <p>Web Development • AI • Robotics • Creative Projects</p>
+
+      <div class="highlight-tags">
+        <span>Frontend Developer</span>
+        <span>WordPress</span>
+        <span>Robotics</span>
+        <span>Problem Solving</span>
+      </div>
     </div>
 
   </section>
@@ -83,35 +92,35 @@
     <div class="about-grid">
 
       <div class="about-card">
-        <h3>Who I Am</h3>
+        <h3><i class="fas fa-user"></i> Who I Am</h3>
         <p>
           Hi, I'm Lana, a 18-year-old future engineer and passionate web developer.
         </p>
       </div>
 
       <div class="about-card">
-        <h3>Web Development</h3>
+        <h3><i class="fas fa-code"></i> Web Development</h3>
         <p>
           I design and build modern, responsive websites using HTML, CSS, JavaScript and WordPress.
         </p>
       </div>
 
       <div class="about-card">
-        <h3>Robotics</h3>
+        <h3><i class="fas fa-robot"></i> Robotics</h3>
         <p>
           I build autonomous robots using Arduino, ESP and smart sensors.
         </p>
       </div>
 
       <div class="about-card">
-        <h3>Competitions</h3>
+        <h3><i class="fas fa-trophy"></i> Competitions</h3>
         <p>
           I participated in FGC and Brilliant Blue global competitions.
         </p>
       </div>
 
       <div class="about-card">
-        <h3>My Goal</h3>
+        <h3><i class="fas fa-bullseye"></i> My Goal</h3>
         <p>
           To become an engineer who creates innovative solutions that improve lives.
         </p>
@@ -146,8 +155,8 @@
           <div class="project-card" data-type="web">
             <h3>Personal CV Website</h3>
             <p>Built using HTML, CSS, JS with animated typing effect.</p>
-            <a href="https://lana-protfolio-0455c9.netlify.app/" target="_blank"><button
-                class="click">Click to visit</button></a>
+            <a href="https://lana-protfolio-0455c9.netlify.app/" target="_blank"><button class="click">Click to
+                visit</button></a>
           </div>
           <div class="project-card" data-type="robotics">
             <h3>Autonomous Robot</h3>
@@ -166,8 +175,8 @@
           <div class="project-card" data-type="web">
             <h3> Safe Now!! </h3>
             <p>This is a website to help you in the emergencies situations.</p>
-            <a href="https://safenow-aiproject-ea110f.netlify.app/" target="_blank"><button
-                class="click">Click to visit</button></a>
+            <a href="https://safenow-aiproject-ea110f.netlify.app/" target="_blank"><button class="click">Click to
+                visit</button></a>
           </div>
           <div class="project-card" data-type="web">
             <h3>University application </h3>
@@ -206,152 +215,323 @@
       </div>
   </section>
 
+
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
     <h2>Experience</h2>
 
-    <div class="card-container">
-      <div class="card">
-        <h3>Web Developer</h3>
-        <div>
+    <!-- Web Developer -->
+    <div class="card">
+      <div class="experience-content">
+
+        <img src="assets/web-development.jpg" alt="Web Development" class="experience-img">
+
+        <div class="experience-text">
+          <h3><i class="fas fa-code"></i> Frontend Web Developer</h3>
+          <p>Developed modern and responsive websites using core web technologies.</p>
+
           <ul>
-            <li>My role: UI Designer & Frontend Developer</li>
-            <li>Built responsive websites using HTML, CSS, JavaScript & WordPress. </li>
-            <li>Created a responsive, modern layout</li>
-            <li>Improved user experience with clean navigation</li>
+            <li>My role: Frontend Developer & UI Designer</li>
+            <li>Built responsive websites using HTML, CSS, and JavaScript.</li>
+            <li>Created interactive and user-friendly interfaces.</li>
+            <li>Implemented responsive designs for desktop, tablet, and mobile devices.</li>
+            <li>Improved website performance and user experience.</li>
           </ul>
         </div>
-      </div>
 
-      <div class="card">
-        <h3>First Global Challenge (2022 - 2025)</h3>
-        <p>Robotics Team Participant</p>
-        <ul>
-          <li>My role: Designer and Programmer</li>
-          <li>Worked on robot assembly and wiring</li>
-          <li>Helped in coding autonomous and manual modes</li>
-          <li>Assisted in problem‑solving challenges during competitions</li>
-        </ul>
       </div>
     </div>
 
+    <!-- First Global Challenge -->
     <div class="card">
-      <div>
-        <h3>Autonomous Robotics Developer</h3>
-        <p>Built autonomous robots using Arduino & ESP32</p>
-        <ul>
-          <li>My role: System Designer and Coder</li>
-          <li>Used Arduino to build sensor‑based robots</li>
-          <li>Developed small turbines to generate electricity</li>
-          <li>Integrated motors, sensors, and power systems</li>
-        </ul>
+      <div class="experience-content">
+
+        <img src="assets/fgc2023.jpg" alt="First Global Challenge" class="experience-img">
+
+        <div class="experience-text">
+          <h3><i class="fas fa-robot"></i> First Global Challenge (2022 - 2025)</h3>
+          <p>Robotics Team Participant</p>
+
+          <ul>
+            <li>My role: Designer and Programmer</li>
+            <li>Worked on robot assembly and wiring.</li>
+            <li>Helped develop autonomous and manual robot modes.</li>
+            <li>Solved technical challenges during competitions.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Autonomous Robotics -->
+    <div class="card">
+      <div class="experience-content">
+
+        <img src="assets/autonomous-robot.jpg" alt="Autonomous Robotics" class="experience-img">
+
+        <div class="experience-text">
+          <h3><i class="fas fa-microchip"></i> Autonomous Robotics Developer</h3>
+          <p>Built autonomous robots using Arduino & ESP32.</p>
+
+          <ul>
+            <li>My role: System Designer and Coder</li>
+            <li>Built sensor-based robots using Arduino.</li>
+            <li>Developed small turbines to generate electricity.</li>
+            <li>Integrated motors, sensors, and power systems.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- WordPress Developer -->
+    <div class="card">
+      <div class="experience-content">
+
+        <img src="assets/wordpress.jpg" alt="WordPress Development" class="experience-img">
+
+        <div class="experience-text">
+          <h3><i class="fab fa-wordpress"></i> WordPress Developer</h3>
+          <p>Designed and developed responsive websites using WordPress.</p>
+
+          <ul>
+            <li>My role: WordPress Designer & Developer</li>
+            <li>Built responsive websites using WordPress and Elementor.</li>
+            <li>Customized themes and plugins to meet client requirements.</li>
+            <li>Optimized website performance and SEO.</li>
+            <li>Ensured mobile-friendly and user-friendly designs.</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
-
-  <!-- CERTIFICATES -->
+  <!--certificates-->
   <section class="section" id="certificates">
     <h2>Certificates</h2>
 
     <div class="card-container">
+
+      <!-- WordPress -->
       <div class="card">
-        <h3>CodeBrave</h3>
-        <p>Robotics & Problem Solving Certification.</p>
+        <div class="experience-content">
+
+          <img src="images/wordpress-cert.jpg" alt="WordPress Certificate" class="experience-img">
+
+          <div class="experience-text">
+            <h3>WordPress Development</h3>
+            <p>
+              Successfully completed training in WordPress website development, learning how to build responsive
+              websites, customize themes, manage plugins, and create user-friendly websites with CodeBrave.
+            </p>
+          </div>
+
+        </div>
       </div>
 
+      <!-- Frontend -->
       <div class="card">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, JavaScript & WordPress Certified.</p>
+        <div class="experience-content">
+
+          <img src="images/frontend-cert.jpg" alt="Frontend Certificate" class="experience-img">
+
+          <div class="experience-text">
+            <h3>Frontend Web Development</h3>
+            <p>
+              Successfully completed training in Frontend Web Development using HTML, CSS, and JavaScript to build
+              responsive and interactive websites with CodeBrave.
+            </p>
+          </div>
+
+        </div>
       </div>
 
+      <!-- Ocean Robotics -->
       <div class="card">
-        <h3>Ocean Robotics</h3>
-        <p>Arduino & ESP systems certification.The first place around the world .</p>
+        <div class="experience-content">
+
+          <img src="assets/ocean-robotics.jpg" alt="Ocean Robotics Certificate" class="experience-img">
+
+          <div class="experience-text">
+            <h3>Ocean Robotics</h3>
+            <p>
+              Recognized for designing and programming a robotics project using Arduino and ESP systems, achieving 1st
+              place worldwide.
+            </p>
+          </div>
+
+        </div>
       </div>
+
+      <!-- First Global -->
       <div class="card">
-        <h3>Robotics</h3>
-        <p>Earned in 2023 at First Global 2023 in Singapore . We took the 1st place worldwide by creating our robot that
-          help our planet .</p>
+        <div class="experience-content">
+
+          <img src="assets/fgc-cert.jpg" alt="First Global Certificate" class="experience-img">
+
+          <div class="experience-text">
+            <h3>First Global Challenge 2023</h3>
+            <p>
+              Awarded for representing Lebanon at the First Global Challenge in Singapore, achieving 1st place worldwide
+              with our robotics team.
+            </p>
+          </div>
+
+        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section-animate container" id="skills">
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <p class="section-subtitle">
+      A blend of technical expertise and soft skills that help me build
+      innovative solutions and work effectively in teams.
+    </p>
 
-    <h1>Skills</h1>
-
-    <div class="skills-grid">
+    <div class="skills-container">
 
       <!-- Technical Skills -->
-      <div class="skill-box">
-        <h3>Technical Skills</h3>
+      <div class="skills-card">
+        <h3><i class="fas fa-code"></i> Technical Skills</h3>
 
-        <div class="skill-bar"><label>Web Development</label>
-          <div data-progress="87"></div>
-        </div>
-        <div class="skill-bar"><label>Robotics</label>
-          <div data-progress="92"></div>
-        </div>
-        <div class="skill-bar"><label>Electronics</label>
-          <div data-progress="88"></div>
-        </div>
-        <div class="skill-bar"><label>Python</label>
-          <div data-progress="94"></div>
-        </div>
-        <div class="skill-bar"><label>HTML / CSS / JS</label>
-          <div data-progress="76"></div>
-        </div>
-        <div class="skill-bar"><label>WordPress</label>
-          <div data-progress="88"></div>
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-globe"></i> Web Development</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:90%"></div>
+          </div>
         </div>
 
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-robot"></i> Robotics</span>
+            <span>95%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-microchip"></i> Electronics</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fab fa-python"></i> Python</span>
+            <span>85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fab fa-html5"></i> HTML / CSS / JS</span>
+            <span>80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fab fa-wordpress"></i> WordPress</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:90%"></div>
+          </div>
+        </div>
       </div>
 
       <!-- Soft Skills -->
-      <div class="skill-box">
-        <h3>Soft Skills</h3>
+      <div class="skills-card">
+        <h3><i class="fas fa-users"></i> Soft Skills</h3>
 
-        <div class="skill-bar"><label>Teamwork</label>
-          <div data-progress="95"></div>
-        </div>
-        <div class="skill-bar"><label>Communication</label>
-          <div data-progress="85"></div>
-        </div>
-        <div class="skill-bar"><label>Problem-Solving</label>
-          <div data-progress="79"></div>
-        </div>
-        <div class="skill-bar"><label>Leadership</label>
-          <div data-progress="80"></div>
-        </div>
-        <div class="skill-bar"><label>Time Management</label>
-          <div data-progress="92"></div>
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-users"></i> Teamwork</span>
+            <span>95%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:95%"></div>
+          </div>
         </div>
 
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-comments"></i> Communication</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-lightbulb"></i> Problem Solving</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-flag"></i> Leadership</span>
+            <span>85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span><i class="fas fa-clock"></i> Time Management</span>
+            <span>95%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width:95%"></div>
+          </div>
+        </div>
       </div>
 
     </div>
+    <!-- CONTACT -->
+    <section class="contact-page">
 
-  </section>
-  <!-- CONTACT -->
-  <section class="contact-page">
+      <h1>Contact Me</h1>
+      <form class="contact-form" action="https://formspree.io/f/mdkqbwjb" method="post">
+        <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+        <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+        <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+        <textarea rows="5" name="message" placeholder="Enter your message" autocomplete="off" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-    <h1>Contact Me</h1>
-    <form class="contact-form" action="https://formspree.io/f/mdkqbwjb" method="post">
-      <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
-      <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
-      <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
-      <textarea rows="5" name="message" placeholder="Enter your message" autocomplete="off" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer class="site-footer">
-    <div class="webdesign">
-      <p>© 2026 Lana — Future Engineer & Web Developer</p>
-    </div>
-  </footer>
-  <script src="index.js"></script>
+    <footer class="site-footer">
+      <div class="webdesign">
+        <p>© 2026 Lana — Future Engineer & Web Developer</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
 
 
 </body>
